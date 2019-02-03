@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9c98802aa8581834ab34a1b95c87ec3c
+timeCreated: 1522451442
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Aero Matics
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8d7106e829e8ac640935ab550b3bc6e8, type: 3}
+  - {fileID: 12800000, guid: 64d87e091530b1d4db3d9b5983c38374, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: ir_seq_ui_objects_v3
+  assetBundleVariant: 

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0EB66193-D77E-4A51-BAA2-67F641217963}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IRSequencer_v3</RootNamespace>
+    <AssemblyName>IRSequencer_v3</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug 1.3.1\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;_KSP_1_3_1</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release 1.3.1\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Kerbal Space Program 1.3.1 Dev\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Kerbal Space Program 1.3.1 Dev\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Kerbal Space Program 1.3.1 Dev\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\ActionGroupsExtendedAPI.cs" />
+    <Compile Include="API\IRWrapper.cs" />
+    <Compile Include="Gui\BasicTooltip.cs" />
+    <Compile Include="Gui\CanvasGroupFader.cs" />
+    <Compile Include="Gui\HoldButton.cs" />
+    <Compile Include="Gui\PanelDragger.cs" />
+    <Compile Include="Gui\PanelResizer.cs" />
+    <Compile Include="Gui\EditorLocker.cs" />
+    <Compile Include="Gui\ServoHighlighter.cs" />
+    <Compile Include="Gui\UIAnimationHelper.cs" />
+    <Compile Include="Gui\UIAssetsLoader.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\TextureLoader.cs" />
+    <Compile Include="Core\Sequence.cs" />
+    <Compile Include="Core\BasicCommand.cs" />
+    <Compile Include="Core\SequencerState.cs" />
+    <Compile Include="Module\ModuleSequencer.cs" />
+    <Compile Include="Gui\SequencerGUI.cs" />
+    <Compile Include="Gui\StateDragHandler.cs" />
+    <Compile Include="Gui\StateDropHandler.cs" />
+    <Compile Include="Gui\SequenceDragHandler.cs" />
+    <Compile Include="Gui\SequenceDropHandler.cs" />
+    <Compile Include="Gui\CommandDragHandler.cs" />
+    <Compile Include="Gui\CommandDropHandler.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup />
+</Project>
